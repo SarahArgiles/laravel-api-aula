@@ -7,3 +7,11 @@ Route::get('/', function () {
         'message' => 'OK'
     ]);
 });
+
+
+//dentro do somar
+if (count($request->all()) < 1){
+    return response()->json([
+        'message'=> 'Não há valores para somar.'
+    ], 406);
+}
