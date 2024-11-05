@@ -17,4 +17,7 @@ class People extends Model
     'phone',
     'birthDate',
     ];
+    public function interests(){
+        return 
+    }
 }
